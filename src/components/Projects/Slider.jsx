@@ -28,7 +28,7 @@ let data = [
    
     {
         img : "https://res.cloudinary.com/dre3sek1a/image/upload/v1685106705/Test/desktop-preview_ujviak.jpg",
-        disc : "Tipps-Kalkulator!",
+        disc : "Tips-Kalkulator",
         link: "https://raaks1.github.io/tip-calculator-app-main/"
     },
     
