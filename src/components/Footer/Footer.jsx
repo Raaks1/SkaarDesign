@@ -162,10 +162,10 @@ const Footer = () => {
               <textarea id="message" cols="30" rows="10" placeholder="Beskjed" required></textarea>
             </div>
             <button type="submit">{status}</button>
-            <Slide direction="left">  <div className="validate">
+              <div className="validate">
        {submitted ? (
-         <p className="success">Melding sendt!<span className="thumbs"><FiThumbsUp /></span></p>
-       ) : submitting  } </div> </Slide>
+    <Slide direction="right">     <p className="success">Melding sendt!<span className="thumbs"><FiThumbsUp /></span></p></Slide>
+       ) : submitting  } </div> 
           </form>
         </Slide>
        
