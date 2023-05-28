@@ -360,7 +360,7 @@ const Form = styled.div`
     }
     .success {
       color:#fff;
-      font-size:13px;
+      font-size:12px;
       font-weight: 600;
       text-align: center;
       padding-top: 15px;
