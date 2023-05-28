@@ -21,7 +21,7 @@ const Footer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    setStatus("Sender...");
+    setStatus("Sender..");
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
@@ -164,7 +164,7 @@ const Footer = () => {
             <button type="submit">{status}</button>
             <Slide direction="left">  <div className="validate">
        {submitted ? (
-         <p className="success">Melding mottatt!<span className="thumbs"><FiThumbsUp /></span></p>
+         <p className="success">Melding sendt!<span className="thumbs"><FiThumbsUp /></span></p>
        ) : submitting  } </div> </Slide>
           </form>
         </Slide>
