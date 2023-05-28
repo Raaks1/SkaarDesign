@@ -359,7 +359,7 @@ const Form = styled.div`
       }
     }
     .success {
-      color:lightgreen;
+      color:#fff;
       font-size:13px;
       font-weight: 600;
       text-align: center;
@@ -369,7 +369,7 @@ const Form = styled.div`
       
     }
     .thumbs{
-      color: yellow;
+      color: lightgreen;
       margin-left: 5px;
     }
   }
