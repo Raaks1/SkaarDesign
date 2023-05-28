@@ -22,7 +22,7 @@ let data = [
 },
     {
         img : "https://res.cloudinary.com/dre3sek1a/image/upload/v1685106116/Test/microsoftoffice365_fktjfa.avif",
-        disc : "Applikasjon med oversikt over brukertilgang i Azure og Office",
+        disc : "Applikasjon med oversikt over brukertilgang og lisenser i Azure og Office",
         link : "https://o365licenses.azurewebsites.net/"
     },
    
