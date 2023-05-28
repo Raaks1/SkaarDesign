@@ -39,7 +39,7 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: "ERROR" });
+      res.json({ status: "Noe gikk galt" });
     } else {
       res.json({ status: "Vellykket!" });
     }
