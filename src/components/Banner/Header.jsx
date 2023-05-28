@@ -42,6 +42,7 @@ const Container = styled.div`
     animation: header 500ms ease-in-out;
     @media(max-width: 840px){
         width: 90%;
+        
     }
     .bars{
         display: none;
@@ -105,12 +106,15 @@ const Nav = styled.div`
         position: fixed;
         display: flex;
         flex-direction: column;
-        background-color:;
+        padding-top:20%;
+       
         inset: 0;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        gap: 2rem;
+        justify-content: start;
+        align-items: end;
+        padding-right:10%;
+        
+        font-size: 1.5rem;
+        gap: 1rem;
         font-weight: 700;
         height: ${props => props.bar ? "100vh" : 0};
         transition: height 400ms ease-in-out;
