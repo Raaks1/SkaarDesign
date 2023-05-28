@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsInstagram, } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { FiMail, FiPhoneCall,FiThumbsUp } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 
@@ -15,9 +15,12 @@ import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 
 const Footer = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [status, setStatus] = useState("Send");
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
     setStatus("Sender...");
     const { name, email, message } = e.target.elements;
     let details = {
@@ -25,6 +28,7 @@ const Footer = () => {
       email: email.value,
       message: message.value,
     };
+    try {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -32,10 +36,23 @@ const Footer = () => {
       },
       body: JSON.stringify(details),
     });
+      if (response.ok) {
+        setSubmitted(true);
+      
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  
+    setSubmitting(false);
     setStatus("Send");
+  };
+ 
+   /* });
+    
     let result = await response.json();
     alert(result.status);
-  };
+  };*/
   
  const scrollUp = () => {
     window.scroll({
@@ -45,6 +62,7 @@ const Footer = () => {
   };
   return (
     <Container id="footer">
+      
       <Profile>
         <Slide direction="left" delay={1}>
           <h1 className="kontakt">Kontakt</h1>
@@ -122,6 +140,7 @@ const Footer = () => {
         </Fade>
       </Profile>
       <Form>
+     
         <Slide direction="right">
           <form onSubmit={handleSubmit}>
             <div className="name">
@@ -143,9 +162,15 @@ const Footer = () => {
               <textarea id="message" cols="30" rows="10" placeholder="Beskjed" required></textarea>
             </div>
             <button type="submit">{status}</button>
+            <Slide direction="left">  <div className="validate">
+       {submitted ? (
+         <p className="success">Melding mottatt!<span className="thumbs"><FiThumbsUp /></span></p>
+       ) : submitting  } </div> </Slide>
           </form>
         </Slide>
+       
       </Form>
+       
     </Container>
   );
 };
@@ -332,6 +357,20 @@ const Form = styled.div`
         transition: all 0.3s ease-in-out;
         transform: scale(1.05);
       }
+    }
+    .success {
+      color:lightgreen;
+      font-size:13px;
+      font-weight: 600;
+      text-align: center;
+      padding-top: 15px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      
+    }
+    .thumbs{
+      color: yellow;
+      margin-left: 5px;
     }
   }
 `;

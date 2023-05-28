@@ -3,15 +3,22 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 
+
 import { FiMail,  } from "react-icons/fi";
 import { Slide, } from "react-awesome-reveal";
 import { CgProfile } from "react-icons/cg";
 
 
+
 const ContactForm = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true);
     setStatus("Sending...");
     const { name, email, message } = e.target.elements;
     let details = {
@@ -19,6 +26,8 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
+
+    try {
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -26,13 +35,32 @@ const ContactForm = () => {
       },
       body: JSON.stringify(details),
     });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
+
+    if (response.ok) {
+      setSubmitted(true);
+    
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+
+  setSubmitting(false);
+};
+   
+    
+  
+    
+   
+  
   return (
+    
     <Container>
-    <Form>
+      <div className="test">
+      {submitted ? (
+        <p>Innsending vellykket!</p>
+      ) : (
+      <Form>
+        
         <Slide direction="right">
     <form onSubmit={handleSubmit}>
      
@@ -62,8 +90,10 @@ const ContactForm = () => {
       </div>
       <button type="submit">{status}</button>
     </form>
+  
     </Slide>
     </Form>
+      )}</div>
     </Container>
   );
 };
