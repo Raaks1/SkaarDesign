@@ -25,7 +25,7 @@ const ProfComponent = () => {
           <h1 className="green">SkaarWebdes<span className="red">i</span>gn</h1>
           <h3>Webdesign - UX/UI - Responsivt Design</h3>
           <p>
-          Jeg er dedikert til å levere skreddersydde og innovative nettløsninger som hjelper deg med å oppnå dine digitale mål.
+          Jeg leverer skreddersydde og innovative nettløsninger som hjelper deg med å oppnå dine digitale mål.
           Enten du er en nyoppstartet bedrift som ønsker å etablere en profesjonell online tilstedeværelse, eller en etablert virksomhet som ønsker å oppgradere ditt nåværende nettsted, kan jeg hjelpe deg.
           </p>
           <Link smooth to="/#footer">

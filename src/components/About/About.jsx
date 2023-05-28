@@ -12,10 +12,9 @@ const AboutMe = () => {
 
 <Texts>
     <h1>Kvalitet til en rimelig pr<span className="red"></span>is</h1>
-    <p> Jeg forstår viktigheten av å ha en imponerende og funksjonell nettside uten å bryte budsjettet ditt. Derfor er jeg dedikert til å tilby rimelige webdesign-løsninger som ikke går på kompromiss med kvaliteten.
+    <p> Jeg forstår viktigheten av å ha en imponerende og funksjonell nettside uten å bryte budsjettet ditt. Derfor tilbyr jeg rimelige webdesign-løsninger som ikke går på kompromiss med kvaliteten.
 
 Min spesialitet er å skape flotte og brukervennlige nettsteder til en pris som passer for deg. Jeg tror at en profesjonell nettside ikke trenger å være en luksus, men heller en nødvendighet for enhver bedrift eller enkeltperson som ønsker å nå ut til sitt publikum på nettet.
-
 
 Uansett om du er en liten bedrift, en frilanser eller en oppstart, kan jeg hjelpe deg med å realisere dine digitale mål til en pris som passer for deg. Jeg tror på å bygge langsiktige partnerskap med våre kunder, og er opptatt av å levere resultater som overstiger forventningene.
 
@@ -101,10 +100,11 @@ h4 {
     max-width: 80%;
     font-weight: 400;
     
-    
-    
   }
 
-  
+
+  .span {
+    font-family: Montserrat;
+    font-weight: 400;
   }
 `;

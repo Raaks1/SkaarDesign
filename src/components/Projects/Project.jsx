@@ -21,11 +21,11 @@ export default Project;
 const Container = styled.div`
     height: 10rem;
     background-color:#bbb;
-  
+     
     margin: 0 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     position: relative;
     overflow: hidden;
     img{
@@ -46,6 +46,10 @@ const Container = styled.div`
         transition: all 400ms ease-in-out;
         h1{
             font-size: 1rem;
+            font-family: Arial;
+            letter-spacing: 0.02rem;
+            font-weight: 600;
+            
         }
     
         p{
@@ -66,4 +70,5 @@ const Container = styled.div`
         bottom: 0;
     }
 
+}
 `

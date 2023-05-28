@@ -194,7 +194,7 @@ const Profile = styled.div`
     h1 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
-      color: #f84525;
+      color: #111; /*#f84525;*/
     }
 
     div {
@@ -227,7 +227,7 @@ const Profile = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        /*background-color: black;*/
         width: 2rem;
         height: 2rem;
         margin-right: 0.5rem;
