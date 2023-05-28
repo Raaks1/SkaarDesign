@@ -348,11 +348,14 @@ const Form = styled.div`
       width: 5rem;
       height: 1.8rem;
       background-color: transparent;
-      border: 1px solid white;
+      border: 2px solid white;
       border-radius: 50px;
      /* filter: drop-shadow(0px 4px 5px #01be9551);*/
       cursor: pointer;
       :hover {
+        color:#171615;
+        background-color: white;
+        border-radius: 5px;
         /*filter: drop-shadow(0px 6px 9px var(---background));*/
         transition: all 0.3s ease-in-out;
         transform: scale(1.05);
