@@ -41,7 +41,7 @@ const Services = () => {
             Icon={CgWebsite}
             title={"UX/UI"}
             disc={`Jeg fokuserer ikke bare på estetikk, men også på brukervennlighet. Jeg designer intuitive brukergrensesnitt som gjør det enkelt for besøkende å navigere på nettstedet ditt og finne den informasjonen de leter etter.
-             Ved å optimalisere brukeropplevelsen bidrar vi til å øke engasjementet og konverteringen på nettstedet ditt.`}
+             Ved å optimalisere brukeropplevelsen bidrar jeg til å øke engasjementet og konverteringen på nettstedet ditt.`}
           />
           
         </Slide>
