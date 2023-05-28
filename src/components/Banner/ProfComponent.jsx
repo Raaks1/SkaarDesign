@@ -87,7 +87,7 @@ const Texts = styled.div`
   
   flex: 1;
   h4 {
-    font-family: Helvetia-neue Narrow SemiBold;
+    font-family: Helvetica-neue Narrow SemiBold;
     color:#f84525;
     font-size: 16px;
     letter-spacing: .2em;
