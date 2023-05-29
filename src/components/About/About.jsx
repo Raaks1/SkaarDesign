@@ -16,7 +16,7 @@ const AboutMe = () => {
 
 Min spesialitet er å skape flotte og brukervennlige nettsteder til en pris som passer for deg. Jeg tror at en profesjonell nettside ikke trenger å være en luksus, men heller en nødvendighet for enhver bedrift eller enkeltperson som ønsker å nå ut til sitt publikum på nettet.
 
-Uansett om du er en liten bedrift, en frilanser eller en oppstart, kan jeg hjelpe deg med å realisere dine digitale mål til en pris som passer for deg. Jeg tror på å bygge langsiktige partnerskap med våre kunder, og er opptatt av å levere resultater som overstiger forventningene.
+Uansett om du er en liten bedrift, en frilanser eller en oppstart, kan jeg hjelpe deg med å realisere dine digitale mål til en pris som passer for deg. Jeg tror på å bygge langsiktige partnerskap med mine kunder, og er opptatt av å levere resultater som overstiger forventningene.
 
 Ta kontakt i dag for å starte på veien mot en imponerende nettside til en rimelig pris. Jeg ser frem til å samarbeide med deg og hjelpe deg med å lykkes online!</p>
 
