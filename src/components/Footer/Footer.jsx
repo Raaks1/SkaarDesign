@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsInstagram, } from "react-icons/bs";
-import { FiMail, FiPhoneCall,FiThumbsUp } from "react-icons/fi";
+import { FiMail, FiPhoneCall,FiAlertOctagon } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 
@@ -17,7 +17,7 @@ import { Slide, Zoom, Fade } from "react-awesome-reveal";
 const Footer = () => {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [status, setStatus] = useState("Send");
+  const [status, setStatus] = useState('Send');
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -42,10 +42,11 @@ const Footer = () => {
       }
     } catch (error) {
       console.error('Error:', error);
+      
     }
-  
     setSubmitting(false);
-    setStatus("Send");
+    setStatus('Send');
+  
   };
  
    /* });
@@ -164,7 +165,7 @@ const Footer = () => {
             <button type="submit">{status}</button>
               <div className="validate">
        {submitted ? (
-    <Slide direction="right">     <p className="success">Melding sendt!<span className="thumbs"><FiThumbsUp /></span></p></Slide>
+    <Slide direction="right"> <p className="success">Melding sendt!<span className="thumbs"><FiAlertOctagon /></span></p></Slide>
        ) : submitting  } </div> 
           </form>
         </Slide>
