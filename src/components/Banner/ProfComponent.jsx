@@ -22,7 +22,7 @@ const ProfComponent = () => {
           <h4>
           Velkommen til<span className="green"></span>
           </h4>
-          <h1 className="green">SkaarWebdes<span className="red">i</span>gn</h1>
+          <h1 className="green">SkaarWebdes<span className="red"></span>ign</h1>
           <h3>Webdesign - UX/UI - Responsivt Design</h3>
           <p>
           Jeg leverer skreddersydde og innovative nettløsninger som hjelper deg med å oppnå dine digitale mål.
