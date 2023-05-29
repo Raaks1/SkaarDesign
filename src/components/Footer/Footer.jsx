@@ -165,7 +165,7 @@ const Footer = () => {
             <button type="submit">{status}</button>
               <div className="validate">
        {submitted ? (
-    <Slide direction="right"> <p className="success">Melding sendt!<span className="thumbs"><FiAlertOctagon /></span></p></Slide>
+    <Fade direction="up"> <p className="success">Melding sendt!<span className="thumbs"><FiAlertOctagon /></span></p></Fade>
        ) : submitting  } </div> 
           </form>
         </Slide>
