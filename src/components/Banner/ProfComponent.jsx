@@ -98,7 +98,7 @@ const Texts = styled.div`
     color:white;
     font-size: 68px;
     font-family: "Montserrat";
-    letter-spacing: 
+    letter-spacing: ;
     font-weight: 700;
   }
   h3 {
