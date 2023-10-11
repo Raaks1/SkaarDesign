@@ -47,7 +47,7 @@ const Services = () => {
         </Slide>
       
       </Cards>
-      <p></p>
+    
     </Container>
   );
 };
