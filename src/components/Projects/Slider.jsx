@@ -15,20 +15,32 @@ let data = [
     link : "https://www.martinhanstvedt.no/"
 },
 
+{
+  img : "https://i.postimg.cc/76LGyW9K/gv-rentals.png",
+  disc : "Rebranding",
+  link : "https://www.gv-rentals.com/"
+},
+
+{
+  img : "https://i.postimg.cc/Dz0bXz42/frontend-mentor-calc.png",
+  disc : "Frontend Mentor oppgave",
+  link : "https://github.com/Raaks1/calculator-app"
+},
+
  {
-      img : "https://cdn.discordapp.com/attachments/1097257485154398259/1111646337889489029/image.png",
-      disc : "Nettside for sprinttrening og coaching /m nettbutikk. - Lanseres snart",
+      img : "https://i.postimg.cc/qv0sz0GR/elitesprinttrening-screenshot.png",
+      disc : "Nettside for sprinttrening og coaching /m nettbutikk. - Lanseres i vinter",
       link : "https://www.elitesprinttrening.no/"
 },
     {
         img : "https://res.cloudinary.com/dre3sek1a/image/upload/v1685106116/Test/microsoftoffice365_fktjfa.avif",
-        disc : "Applikasjon med oversikt over brukertilgang og lisenser i Azure og Office",
+        disc : "Applikasjon med oversikt over brukertilgang i Azure og Office",
         link : "https://o365licenses.azurewebsites.net/"
     },
    
     {
         img : "https://res.cloudinary.com/dre3sek1a/image/upload/v1685106705/Test/desktop-preview_ujviak.jpg",
-        disc : "Tips-Kalkulator",
+        disc : "Tipps-Kalkulator!",
         link: "https://raaks1.github.io/tip-calculator-app-main/"
     },
     
